@@ -1,0 +1,106 @@
+/** this component main home */
+.container-home {
+  width: 80%;
+  margin: auto;
+
+  /* flex: 1; */
+}
+.content {
+  background-color: #faf7f2;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+/**this component user say hello */
+.container-say-hello {
+  font-size: 42px;
+  font-weight: 600;
+  color: black;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+.container-say-hello :nth-child(2) {
+  color: #63605f;
+}
+
+@media (max-width: 300px) {
+  .container-home {
+    width: 92%;
+  }
+  .content {
+    padding: 5px;
+  }
+
+  /**this component user say hello */
+  .container-say-hello {
+    font-size: 20px;
+  }
+}
+@media (max-width: 380px) {
+  .container-home {
+    width: 92%;
+  }
+  .content {
+    padding: 5px;
+  }
+
+  /**this component user say hello */
+  .container-say-hello {
+    font-size: 24px;
+  }
+}
+@media (max-width: 420px) {
+  .container-home {
+    width: 92%;
+  }
+  .content {
+    padding: 5px;
+  }
+
+  /**this component user say hello */
+  .container-say-hello {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .container-home {
+    width: 90%;
+  }
+  .content {
+    padding: 5px;
+  }
+
+  /**this component user say hello */
+  .container-say-hello {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 780px) {
+  .container-home {
+    width: 92%;
+  }
+  .content {
+    padding: 5px;
+  }
+
+  /**this component user say hello */
+  .container-say-hello {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 1400px) {
+}
+@media (min-width: 1401px) {
+}

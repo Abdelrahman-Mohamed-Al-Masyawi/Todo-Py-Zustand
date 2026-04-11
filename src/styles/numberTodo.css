@@ -1,0 +1,58 @@
+.AppPagination {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.pagination {
+  width: 40%;
+
+}
+
+.container-number-todos {
+  display: flex;
+  gap: 20px;
+}
+.num-todo-complete {
+  width: 120px;
+  height: 80px;
+  background-color: #f0d1a8;
+  padding: 10px;
+  font-size: 14px;
+  word-break: break-all;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.num-todo {
+  width: 120px;
+  height: 80px;
+  font-size: 14px;
+  background-color: #c4a49f;
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.nm-todo {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  padding-bottom: 5px;
+}
+
+@media (max-width:600px){
+  .AppPagination{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+}
