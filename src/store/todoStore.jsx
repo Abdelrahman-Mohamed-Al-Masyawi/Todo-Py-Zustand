@@ -11,8 +11,18 @@ const todos = [
 ];
 
 export const useStore = create((set) => ({
+  // STATE
   todos: todos,
-  addTod:(newTodo)=>set((state)=>{
-    todos:state.todos.push(newTodo)
-  })
+
+  // FUNCTION Add
+  addTodo: (newTodo) =>
+    set((state) => ({
+      todos: [...state.todos, newTodo],
+    })),
+
+  // function delete
+  deleteTodo: (id) =>
+    set((state) => ({
+      todos: state.todos.filter((it) => it.id !== id),
+    })),
 }));

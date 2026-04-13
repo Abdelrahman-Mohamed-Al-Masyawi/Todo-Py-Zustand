@@ -12,9 +12,12 @@ export default function ShowAllTodos() {
   );
 }
 
-
-
 function Todo({ todo }) {
+  const funDelete = useStore((state) => state.deleteTodo);
+  function handleDelete(id) {
+    funDelete(id);
+  }
+
   return (
     <div id={todo.id} className='container-grid-todo '>
       <div className='title-todo'>{todo.title}</div>
@@ -31,7 +34,7 @@ function Todo({ todo }) {
       </div>
 
       <div className='mark-delete'>
-        <ImgMark src={'Group 128.svg'} />
+        <ImgMark onClick={()=>handleDelete(todo.id)} src={'Group 128.svg'} />
       </div>
     </div>
   );

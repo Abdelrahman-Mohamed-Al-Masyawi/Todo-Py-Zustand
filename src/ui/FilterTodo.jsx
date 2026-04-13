@@ -1,3 +1,4 @@
+import { getDatToday } from "../functions/getDatToday";
 import "../styles/FilterTodo.css"
 export default function FilterTodo() {
   const date = new Date();
@@ -19,11 +20,5 @@ export default function FilterTodo() {
 }
 
 function ShowDate() {
-  const date = new Date();
-  const day = date.getDay();
-  const month = date.getMonth();
-  const year = date.getFullYear();
-  const fullDate = `${year}/${month}/${day}`;
-
-  return <div className='grid-search-1'>{fullDate}</div>;
+  return <div className='grid-search-1'>{getDatToday()}</div>;
 }
