@@ -1,6 +1,7 @@
 /** this style component show name day */
 .get-Day {
   color: #f87777;
+  font-weight: bold;
 }
 
 /** this style component form add todo  */
@@ -9,6 +10,7 @@
   background-color: #dbe2ef;
   padding: 10px;
   border: 1px solid #b1b1b1;
+  text-align: center;
 }
 
 .btn-add {
@@ -16,6 +18,7 @@
   color: white;
   padding: 5px;
   font-size: 30px;
+  cursor: pointer;
 }
 
 .form-add-todo {

@@ -6,14 +6,14 @@ export default function FormAddTodo() {
       <ShowNameTody />
       <input
         className='bg-input input-title grid-input-2'
-        placeholder=' type Title of task'
+        placeholder=' عنوان المهمة'
         type='text'
         name=''
         id=''
       />
       <input
         className='bg-input input-content grid-input-3'
-        placeholder='Detail of your task'
+        placeholder='تفاصيل المهمة'
         type='text'
         name=''
         id=''

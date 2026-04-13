@@ -23,6 +23,7 @@
   width: 100%;
   margin: auto;
   text-align: center;
+  margin: 40px auto;
 }
 
 .container-say-hello :nth-child(2) {
