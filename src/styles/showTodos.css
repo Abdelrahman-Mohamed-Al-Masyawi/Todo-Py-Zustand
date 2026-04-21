@@ -45,6 +45,14 @@
   height: 25px;
   cursor: pointer;
 }
+
+.iconCheck{
+  font-size: 25px;
+  
+}
+.mark-check{
+  cursor: pointer;
+}
 .start-date-todo {
   font-weight: bold;
 }

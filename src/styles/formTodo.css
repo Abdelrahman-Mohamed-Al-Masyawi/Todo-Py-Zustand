@@ -11,6 +11,7 @@
   padding: 10px;
   border: 1px solid #b1b1b1;
   text-align: center;
+  height: 50px;
 }
 
 .btn-add {
@@ -51,7 +52,6 @@
   .grid-input-1 {
     grid-column: 1/7;
     grid-row: 1/2;
-
   }
   .grid-input-2 {
     grid-column: 1/13;
@@ -77,7 +77,6 @@
   .grid-input-1 {
     grid-column: 1/9;
     grid-row: 1/2;
-
   }
   .grid-input-2 {
     grid-column: 1/13;
@@ -103,7 +102,6 @@
   .grid-input-1 {
     grid-column: 1/10;
     grid-row: 1/2;
-
   }
   .grid-input-2 {
     grid-column: 1/13;
@@ -130,7 +128,6 @@
   .grid-input-1 {
     grid-column: 1/10;
     grid-row: 1/2;
-
   }
   .grid-input-2 {
     grid-column: 1/13;
@@ -157,7 +154,6 @@
   .grid-input-1 {
     grid-column: 1/11;
     grid-row: 1/2;
-
   }
   .grid-input-2 {
     grid-column: 1/13;
@@ -173,7 +169,7 @@
   }
 }
 
-@media (min-width: 780px) and (max-width: 1200px){
+@media (min-width: 780px) and (max-width: 1200px) {
   .form-add-todo {
     width: 100%;
     display: grid;
@@ -184,7 +180,6 @@
   .grid-input-1 {
     grid-column: 1/11;
     grid-row: 1/2;
-
   }
   .grid-input-2 {
     grid-column: 3/10;
@@ -202,17 +197,17 @@
 
 @media (min-width: 1200px) and(max-width: 1400px) {
   .grid-input-1 {
-  grid-column: 1/5;
-}
-.grid-input-2 {
-  grid-column: 5/8;
-}
-.grid-input-3 {
-  grid-column: 8/12;
-}
-.grid-input-4 {
-  grid-column: 12/13;
-}
+    grid-column: 1/5;
+  }
+  .grid-input-2 {
+    grid-column: 5/8;
+  }
+  .grid-input-3 {
+    grid-column: 8/12;
+  }
+  .grid-input-4 {
+    grid-column: 12/13;
+  }
 }
 @media (min-width: 1401px) {
 }

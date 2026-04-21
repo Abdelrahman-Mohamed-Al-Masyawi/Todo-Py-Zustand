@@ -2,19 +2,36 @@ import { useState } from 'react';
 import '../styles/formTodo.css';
 import { getDatToday } from '../functions/getDatToday';
 import { useStore } from '../store/todoStore';
+import toast from 'react-hot-toast';
 export default function FormAddTodo() {
   const [title, setTitle] = useState('');
   const [details, setDetails] = useState('');
+  const addTodo = useStore((state) => state.addTodo);
+  const date = useStore((state) => state.date);
 
-  const newTodo = { title: title, details: details, id: Date.now(), complete: false, date: getDatToday() };
+  const newTodo = { title: title, details: details, id: Date.now(), complete: false, date: date };
 
-  const addTodo =useStore((state) => state.addTodo);
   function handleAddTodo(e) {
     e.preventDefault();
-
-    if (!title || !details) return null;
+    if (!title || !details || !date) {
+      if (!title) {
+        toast.error('من فضلك ادخل عنوان المهمة');
+        return null;
+      }
+      if (!details) {
+        toast.error('من فضلك ادخل تفاصيل المهمة');
+        return null;
+      }
+      if (!date) {
+        toast.error('من فضلك اختار تاريخ المهمة من مربع التاريخ');
+        return null;
+      }
+    }
 
     addTodo(newTodo);
+    setTitle('');
+    setDetails('');
+    toast.success('تم اضافة المهمة بنجاح');
   }
 
   return (
@@ -29,7 +46,7 @@ export default function FormAddTodo() {
         name=''
         id=''
       />
-      <input
+      <textarea
         value={details}
         onChange={(e) => setDetails(e.target.value)}
         className='bg-input input-content grid-input-3'
@@ -38,9 +55,7 @@ export default function FormAddTodo() {
         name=''
         id=''
       />
-      <button  className='btn-add grid-input-4'>
-        +
-      </button>
+      <button className='btn-add grid-input-4'>+</button>
     </form>
   );
 }

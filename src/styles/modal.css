@@ -1,0 +1,92 @@
+.containerModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+.modal-content {
+  width: 400px;
+  /* height: 400px; */
+  background-color: #eee;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #eee;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 10px;
+
+  color: rgb(0, 0, 0);
+}
+.modal-header .markClose {
+  /* text-align: center; */
+  width: 10%;
+  border: 2px solid black;
+  cursor: pointer;
+  background-color: #e5e7eb;
+}
+
+.markClose:hover{
+  background-color: #cfd1d6;
+}
+.modal-header-title {
+  width: 90%;
+}
+.model-text {
+  padding: 40px 20px;
+  flex: 1;
+}
+
+.btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #eee;
+  width: 100%;
+
+  padding: 20px 10px;
+}
+
+.btns .btnCLose {
+  background-color: #e5e7eb;
+  color: #111827;
+  font-weight: bold;
+  height: 50px;
+  width: 120px;
+  cursor: pointer;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.btnCLose:hover{
+  background-color: #cfd1d6;
+}
+
+.btns .btnDoing {
+  font-weight: bold;
+  cursor: pointer;
+  height: 50px;
+  width: 120px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+
+}
+
